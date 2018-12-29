@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./carousel/carousel.css">
+    <img id="bg" src="images/21.jpg">
+    <title>Ana Mihajloska</title>
+</head>
+
+<body>
+
+    <h1>An Aspiring Web Developer</h1>
+
+    <div class="container">
+
+        <hr id="headline">
+
+        <div class="section">
+            <div class="sectionHeading">
+                <h2>Biography</h2>
+                <div class="sectionSubhead">
+                    <em>Jack of all trades,
+                        <br />
+                        Master of two.</em>
+                </div>
+            </div>
+            <div class="sectionHalf">
+                <h4>Where I am</h4>
+                <p>
+                    At the present moment, I am a student at the <abbr title="Seavus Education and Development Center">SEDC</abbr> Academy for Web Development, Generation 2018/2019. The reasons that motivated me to embark upon this programming journey
+                    are several. Firstly, taking into consideration the fast pace with which technology has been moving in the past decades, the art of Web Development has grown &mdash; both in popularity, as well as in appeal. Consequently, the demand
+                    for trained programming professionals has drastically increased, providing opportunities for persons who are enthusiastic about reinforcing their knowledge.
+                </p>
+
+                <p>
+                    Being an passionate learner myself, the art of Web Development has inspired me &mdash; and still maintains the same effect &mdash; to delve deeper into its specifics. Dedicating six months' time grasping the main concepts of the craft through online courses
+                    and tutorials, I made the decision of enrolling to the SEDC Academy in order to obtain a deeper insight into the intricacies of Web Programming. The current website provides an overview of the concepts I have mastered during my studies.
+                </p>
+            </div>
+            <div class="sectionHalf">
+                <h4>Where I have been</h4>
+                <p>
+                    In the distant year of 2010, the Department of English Language and Literature &mdash; at the Faculty of Philology Blaze Koneski in Skopje &mdash; accepted the application of enrollment submitted by yours truly. Having completed all academic work by 2014,
+                    my graduation was followed by an application for a Master Degree scholarship at the department of Applied Linguistics at the FON University &mdash; which I succeded in attaining. Finally, I became a Master of Applied Linguistics in
+                    June 2017.
+                </p>
+
+                <p>
+                    During the course of both my undergraduate and graduate studies, as well as afterwards, I have been working in translation, interpreting, and writing &mdash; including literary translation, technical translation, conference interpreting, as well as content
+                    writing. Interestingly, my meeting with programming topics in the translations I worked on was what drove me to take a peek into the field of Web Programming, and in turn, captivated me. It was exactly this which led me to the point
+                    of where I currently am.
+                </p>
+            </div>
+        </div>
+
+        <hr id="break">
+
+        <div class="section">
+            <div class="sectionHeading">
+                <h2>Projects</h2>
+                <div class="sectionSubhead">
+                    <em>An overview of the projects I developed
+                        <br />
+                        during the course of my studies
+                        </em>
+                </div>
+            </div>
+            <div class="galleryContainer">
+                <div class="slideShowContainer">
+                    <div id="playPause" onclick="playPauseSlides()"></div>
+                    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                    <div class="captionTextHolder">
+                        <p class="captionText slideTextFromTop"></p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./carousel/images/RGBCG.png">
+                        <p class="captionText">RGB Color Game</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./carousel/images/ToDoList.png">
+                        <p class="captionText">To Do List</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./carousel/images/WM.png">1366X768
+                        <p class="captionText">Wholesome Meter</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="./carousel/images/PatatapClone.png">
+                        <p class="captionText">Patatap Clone</p>
+                    </div>
+                </div>
+                <div id="dotsContainer"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <hr id="footer">
+            <div class="footer">
+                &copy; 2018 <a href="mailto:mihajloska.ana@gmail.com">Ana Mihajloska</a>
+            </div>
+        </div>
+    </div>
+    <script src="./carousel/carouselv4.js"></script>
+</body>
+
+</html>
