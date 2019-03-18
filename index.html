@@ -1,109 +1,124 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="./carousel/carousel.css">
-    <img id="bg" src="images/21.jpg">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./proxima-nova/fonts/fonts.css" />
     <title>Ana Mihajloska</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container header-container">
+            <h1>Ana Mihajloska</h1>
+        </div>
+    </header>
 
-    <h1>An Aspiring Web Developer</h1>
+    <main id="content" class="no-pad" role="main">
 
-    <div class="container">
-
-        <hr id="headline">
-
-        <div class="section">
-            <div class="sectionHeading">
-                <h2>Biography</h2>
-                <div class="sectionSubhead">
-                    <em>Jack of all trades,
-                        <br />
-                        Master of two.</em>
+        <div class="maininfo image-maininfo about no-blurb" style="background-image: url('./images/img2.jpg')">
+            <img src="./images/img2.jpg" class="mobile-image" alt="">
+            <div class="container">
+                <div class="maininfo-text">
+                    <div class="eyebrow heading -x-small caps">An Aspiring Web Developer</div>
+                    <h1 class="heading -huge">Welcome to my humble website!</h1>
                 </div>
-            </div>
-            <div class="sectionHalf">
-                <h4>Where I am</h4>
-                <p>
-                    At the present moment, I am a student at the <abbr title="Seavus Education and Development Center">SEDC</abbr> Academy for Web Development, Generation 2018/2019. The reasons that motivated me to embark upon this programming journey
-                    are several. Firstly, taking into consideration the fast pace with which technology has been moving in the past decades, the art of Web Development has grown &mdash; both in popularity, as well as in appeal. Consequently, the demand
-                    for trained programming professionals has drastically increased, providing opportunities for persons who are enthusiastic about reinforcing their knowledge.
-                </p>
-
-                <p>
-                    Being an passionate learner myself, the art of Web Development has inspired me &mdash; and still maintains the same effect &mdash; to delve deeper into its specifics. Dedicating six months' time grasping the main concepts of the craft through online courses
-                    and tutorials, I made the decision of enrolling to the SEDC Academy in order to obtain a deeper insight into the intricacies of Web Programming. The current website provides an overview of the concepts I have mastered during my studies.
-                </p>
-            </div>
-            <div class="sectionHalf">
-                <h4>Where I have been</h4>
-                <p>
-                    In the distant year of 2010, the Department of English Language and Literature &mdash; at the Faculty of Philology Blaze Koneski in Skopje &mdash; accepted the application of enrollment submitted by yours truly. Having completed all academic work by 2014,
-                    my graduation was followed by an application for a Master Degree scholarship at the department of Applied Linguistics at the FON University &mdash; which I succeded in attaining. Finally, I became a Master of Applied Linguistics in
-                    June 2017.
-                </p>
-
-                <p>
-                    During the course of both my undergraduate and graduate studies, as well as afterwards, I have been working in translation, interpreting, and writing &mdash; including literary translation, technical translation, conference interpreting, as well as content
-                    writing. Interestingly, my meeting with programming topics in the translations I worked on was what drove me to take a peek into the field of Web Programming, and in turn, captivated me. It was exactly this which led me to the point
-                    of where I currently am.
-                </p>
             </div>
         </div>
 
-        <hr id="break">
+        <section class="info-panel text">
+            <div class="container -medium">
+                <h2 class="heading -huge -light">A little bit about myself</h2>
+                <p id="paragraph-text"> Master of English Linguistics who at the present moment is a student at the <abbr title="Seavus Education and Development Center">SEDC</abbr> Academy for Web Development, Generation 2018/2019. What motivated me to embark upon my programming
+                    journey were the growing popularity and appeal of Web Development, complemented by my desire to expand my fields of knowledge and expertise. The current website provides an overview of the concepts I have mastered during my studies.</p>
+            </div>
+        </section>
 
-        <div class="section">
-            <div class="sectionHeading">
-                <h2>Projects</h2>
-                <div class="sectionSubhead">
-                    <em>An overview of the projects I developed
-                        <br />
-                        during the course of my studies
-                        </em>
+        <!-- <section class="info-panel text">
+            <div class="placeholder">
+                <img src="./images/img1.jpg" alt="" srcset="./images/img1.jpg 1x" class="desktop">
+            </div>
+        </section> -->
+
+        <section class="info-panel text" style="padding: 0px;">
+            <div class="maininfo image-maininfo about no-blurb" style="background-image: url('./images/img25.jpg')">
+                <img src="./images/img25.jpg" class="mobile-image" alt="">
+                <div class="container -medium">
+                    <div class="maininfo-text">
+                        <h2 class="heading -huge -light">Fullstack Web Development</h2>
+                        <p id="paragraph-text">My toolbox is currently filled with some of the following: HTML5, CSS3, JavaScript, Bootstrap, jQuery and .NET with C#. This toolbox is to be filled with more acronyms as I advance through the Web Development Academy.
+                            I love to keep track of developing standards and technologies, which allow for the creation of awesome new websites.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="galleryContainer">
-                <div class="slideShowContainer">
-                    <div id="playPause" onclick="playPauseSlides()"></div>
-                    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
-                    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
-                    <div class="captionTextHolder">
-                        <p class="captionText slideTextFromTop"></p>
-                    </div>
-                    <div class="imageHolder">
-                        <img src="./carousel/images/RGBCG.png">
-                        <p class="captionText">RGB Color Game</p>
-                    </div>
-                    <div class="imageHolder">
-                        <img src="./carousel/images/ToDoList.png">
-                        <p class="captionText">To Do List</p>
-                    </div>
-                    <div class="imageHolder">
-                        <img src="./carousel/images/WM.png">1366X768
-                        <p class="captionText">Wholesome Meter</p>
-                    </div>
-                    <div class="imageHolder">
-                        <img src="./carousel/images/PatatapClone.png">
-                        <p class="captionText">Patatap Clone</p>
+        </section>
+
+        <section class="info-panel text feature-list">
+            <div class="container -medium">
+                <h2 class="heading -huge -light">A quick look into my portfolio</h2>
+                <p id="portfolio">Check out the projects I have created during the course of my studies &mdash; links are provided in the headings &mdash; along with the technologies I used in order to develop them.</p>
+            </div>
+            <div class="container">
+                <ul id="projects">
+                    <li>
+                        <h5>
+                            <a href="https://mih-ana.github.io/wholesome-meter/index.html" target="_blank" title="Wholesome Meter">Wholesome Meter</a></h5>
+                        <p id="paragraph-text">Designed to brighten your day by measuring wholesomeness levels and providing a nice little quote to go along with them. Developed with HTML5, CSS3, Bootstrap 4.1.3. and jQuery 3.3.1.</p>
+                    </li>
+                    <li>
+
+                        <h5><a href="" target="_blank" title="Anxiety Relief">Anxiety Relief</a></h5>
+                        <p id="paragraph-text">Inspired by the work of psychologists, the main aim of this app is to alleviate anxiety by visual, audial and kinesthetic means. Developed with HTML5, CSS3, Bootstrap 3.3.5. and jQuery 2.1.4.</p>
+                    </li>
+                    <li>
+
+                        <h5><a href="" target="_blank" title="RGB Color Game">RGB Color Game</a></h5>
+                        <p id="paragraph-text">Motivated by the desire to learn, this fun game provides an entertaining way of reviewing and mastering the whole RGB color spectrum. Developed with HTML5, CSS3, and vanilla JavaScript.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="info-panel text" style="padding: 0px;">
+            <div class="maininfo image-maininfo about no-blurb" style="background-image: url('./images/img18.jpg')">
+                <img src="./images/img18.jpg" class="mobile-image" alt="">
+                <div class="container -medium">
+                    <div class="maininfo-text" id="medium">
+                        <h2 class="heading -huge -light">Get Connected</h2>
+                        <ul id="connect">
+                            <li>
+                                <a href="https://github.com/mih-ana" target="_blank" title="Github">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ana-m-7078a8159/" target="_blank" title="LinkedIn">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:mihajloska.ana@gmail.com" title="Email">
+                                    <ion-icon name="mail"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
-                <div id="dotsContainer"></div>
             </div>
-        </div>
-        <div class="bottom">
-            <hr id="footer">
-            <div class="footer">
-                &copy; 2018 <a href="mailto:mihajloska.ana@gmail.com">Ana Mihajloska</a>
-            </div>
-        </div>
+        </section>
+    </main>
+
+
+
+    <div class="end">
+        <p>&copy; 2019 Ana Mihajloska.</p>
     </div>
-    <script src="./carousel/carouselv4.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </body>
 
 </html>
